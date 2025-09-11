@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Projects() {
   return (
-    <section className="min-h-screen p-20 border-gray-200 border-t">
+    <section className="min-h-screen p-7 md:p-20 border-gray-200 border-t">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function Projects() {
           Projects
         </motion.h2>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 md:gap-8">
           <div>
             <a
               href="https://github.com/harisenincom-batch4-team1/kalibrr-frontend"
@@ -38,7 +38,7 @@ export default function Projects() {
             <motion.h2 className="text-lg md:text-xl mt-4 font-semibold">
               Portal
             </motion.h2>
-            <motion.p className="text-base leading-relaxed mt-2">
+            <motion.p className="text-base md:text-lg leading-relaxed mt-2">
               A job portal designed to simplify the employee recruitment
               process. It connects companies with talented professionals and
               makes the search for the right opportunity easier. For job
@@ -50,7 +50,7 @@ export default function Projects() {
             </motion.p>
           </div>
 
-          <div>
+          <div className="mt-10 md:mt-0">
             <a
               href="https://github.com/vickyvaf/lounge"
               target="_blank"
@@ -71,7 +71,7 @@ export default function Projects() {
             <motion.h2 className="text-lg md:text-xl mt-4 font-semibold">
               Lounge
             </motion.h2>
-            <motion.p className="text-base leading-relaxed mt-2">
+            <motion.p className="text-base md:text-lg leading-relaxed mt-2">
               An interactive 3D interior experience built with Three.js. Users
               can explore a virtual room, move around the space, and interact
               with furniture. The project focuses on bringing architectural

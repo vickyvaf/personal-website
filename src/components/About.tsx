@@ -4,28 +4,26 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="min-h-screen p-20 border-gray-200 border-t">
+    <section className="min-h-screen p-7 md:p-20 border-gray-200 border-t">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="mx-auto"
       >
-        <motion.h2 className="text-xl md:text-3xl font-bold mb-10">
+        <motion.h2 className="text-xl md:text-3xl font-bold mb-5 md:mb-10">
           About
         </motion.h2>
-        <div className="flex items-start gap-8">
+        <div className="md:h-fit flex flex-col md:flex-row items-start gap-4 md:gap-8">
           <motion.img
             src="/hand-drawn-retro.jpg"
-            width={250}
-            height={250}
-            className="rounded-md"
+            className="w-40 h-40 md:w-[250px] md:h-[250px] rounded-md"
           />
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-xl"
+            className="text-base md:text-xl"
           >
             I specialize in crafting engaging user interfaces that feel both
             intuitive and responsive. Using React.js and Next.js, I translate
@@ -40,12 +38,12 @@ export default function About() {
           </motion.p>
         </div>
 
-        <div className="flex items-start gap-8 mt-10">
+        <div className="md:h-fit flex flex-col-reverse md:flex-row items-start gap-4 md:gap-8 mt-7 md:mt-10">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xl"
+            className="text-base md:text-xl"
           >
             On the backend, I build systems that keep applications running
             smoothly. I work with tools like Node.js, Express.js, Nest.js, and
@@ -59,7 +57,7 @@ export default function About() {
             src="/hand-drawn-cartoon.jpg"
             width={250}
             height={250}
-            className="rounded-md"
+            className="w-40 h-40 md:w-[250px] md:h-[250px] rounded-md"
           />
         </div>
       </motion.div>
